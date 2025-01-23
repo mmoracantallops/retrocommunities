@@ -1,0 +1,27 @@
+Contenido de cada fichero:
+---------------
+Relaciones entre usuarios:
+- vb_1_vertices_foro_completo_con_lpa_id
+	* Id de los nodos
+	* lpa_id: comunidad extraída a partir del algoritmo LPA de GraphFrames
+
+- vb_1_edges_foro_completo
+	* Source
+	* Target
+	* topic_id: extraído en la fase de NLP
+	* weight
+	* relationship: replies_to_author o quotes
+
+
+
+
+
+---------------
+Relaciones entre usuarios y foros:
+- vb_2_edges_users_vs_foros
+	* Id de los nodos
+	* type: 1 (foro) o 2 (usuario)
+- vb_2_vertices_users_vs_foros
+	* Source
+	* Target
+	* weight
